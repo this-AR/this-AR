@@ -1,4 +1,4 @@
-<img src="assets/header.svg" width="100%" alt="Header styled as an ML experiment dashboard for run aditya-rai/research: Aditya Rai, AI/ML Researcher at NIT Kurukshetra. Config lists focus IR, RAG, Edge and RecSys and 3 papers, beside live train-loss and validation-AUC charts and gauges for GPU utilisation, 7.2M parameters and 86% faithfulness"/>
+<img src="assets/header-dashboard.svg" width="100%" alt="Header styled as an ML experiment dashboard for run aditya-rai/research: Aditya Rai, AI/ML Researcher at NIT Kurukshetra. Config lists focus IR, RAG, Edge and RecSys and 3 papers, beside live train-loss and validation-AUC charts and gauges for GPU utilisation, 7.2M parameters and 86% faithfulness"/>
 
 <div align="center">
 
