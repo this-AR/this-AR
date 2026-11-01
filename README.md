@@ -1,4 +1,4 @@
-<img src="assets/header-dashboard.svg" width="100%" alt="Header styled as an ML experiment dashboard for run aditya-rai/research: Aditya Rai, AI/ML Researcher at NIT Kurukshetra. Config lists focus IR, RAG, Edge and RecSys and 3 papers, beside live train-loss and validation-AUC charts and gauges for GPU utilisation, 7.2M parameters and 86% faithfulness"/>
+<img src="assets/header-minimal.svg" width="100%" alt="Aditya Rai — AI/ML Researcher, NIT Kurukshetra. Focus: 01 retrieval, 02 RAG and LLMs, 03 edge AI, 04 recsys. 3 papers, 2nd place at IEEE UERC 2026, Amazon ML Summer School 2026"/>
 
 <div align="center">
 
