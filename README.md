@@ -36,7 +36,34 @@ I'm a B.Tech student in **Artificial Intelligence & Machine Learning at NIT Kuru
 | 👂 | **System Description: Cascaded Knowledge Distillation and Structured Pruning for Edge Ear Biometrics** | IJCB 2026 · *in press* |
 | ➗ | **Enhancing Multilingual Mathematical Document Retrieval: A Hindi-to-English Translation and ColBERT-based Approach** | FIRE 2025 · IIT (BHU) Varanasi |
 
-## 🚀 Featured work
+## 🔬 Research highlights
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 👂 UERC 2026: Edge Ear Biometrics
+Multi-stage **knowledge distillation + Taylor pruning**: SwinV2 88M → TinyViT 21M → **7.2M** parameters, small enough for a Raspberry Pi 4.
+
+`🥈 2nd place, both tracks` · `91% smaller` · `AUC 96.8%`
+
+<sub>PyTorch · TinyViT · SwinV2 · AdaFace · torch-pruning · 📄 IJCB 2026</sub>
+
+</td>
+<td width="50%" valign="top">
+
+### ➗ CLMIR: FIRE 2025
+Cross-language **math retrieval** (Hindi → English): translation followed by ColBERT late-interaction retrieval.
+
+`Top 6 teams` · `MAP 0.148` · `nDCG 0.220`
+
+<sub>ColBERT · NLP · Multilingual IR · 📄 FIRE 2025</sub>
+
+</td>
+</tr>
+</table>
+
+## 🚀 Featured repos
 
 <table>
 <tr>
@@ -53,50 +80,103 @@ Hybrid BM25 + dense retrieval, CrossEncoder reranking, multi-hop routing, and tw
 </td>
 <td width="50%" valign="top">
 
-### 👂 [UERC 2026 — Edge Ear Biometrics](https://github.com/this-AR/UERC26_NITK)
-Multi-stage **knowledge distillation + Taylor pruning**: SwinV2 88M → TinyViT 21M → **7.2M** parameters, small enough for a Raspberry Pi 4.
+### 🎶 [Team Sargam: Music-CRS](https://github.com/this-AR/sargam-music-crs)
+A conversational music recommender for the ACM RecSys 2026 challenge. Multi-seed FAISS search over CF, audio and visual embeddings, plus BM25, merged with weighted RRF and an LLM exact-match extractor.
 
-`🥈 2nd place, both tracks` · `91% smaller` · `AUC 96.8%`
+`9th academic track` · `47K-track catalog` · `📄 RecSys 2026`
 
-<sub>PyTorch · TinyViT · SwinV2 · AdaFace · torch-pruning</sub>
+<sub>FAISS · BM25 · Gemini · RRF</sub>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🎶 [Team Sargam — Music-CRS](https://github.com/this-AR/sargam-music-crs)
-A conversational music recommender for the ACM RecSys 2026 challenge. Multi-seed FAISS search over CF, audio and visual embeddings, plus BM25, merged with weighted RRF and an LLM exact-match extractor.
+### 🧪 [neetcode-gpt](https://github.com/this-AR/neetcode-gpt)
+A **GPT built from scratch**, starting from gradient descent and working up through self-attention, multi-head attention and transformer blocks to a working language model.
 
-`9th academic track` · `47K-track catalog`
+`attention from scratch` · `full GPT`
 
-<sub>FAISS · BM25 · Gemini · RRF</sub>
+<sub>Python · NumPy</sub>
 
 </td>
 <td width="50%" valign="top">
 
-### ➗ CLMIR — FIRE 2025
-Cross-language **math retrieval** (Hindi → English): translation followed by ColBERT late-interaction retrieval.
+### 🤖 [AI Research Agent](https://github.com/this-AR/AI_RESEARCHAGENT)
+A **four-agent CrewAI pipeline**: lead discovery → email generation → workflow review → quality validation. It is being upgraded into an evidence-grounded app.
 
-`Top 6 teams` · `MAP 0.148` · `nDCG 0.220`
+`multi-agent` · `LLM orchestration`
 
-<sub>ColBERT · NLP · Multilingual IR</sub>
+<sub>CrewAI · Python · LLMs</sub>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🧠 [EEG Stress Detection](https://github.com/this-AR/eeg_stress_detection)
+Replicates and extends a stress-detection paper on the **SAM40 EEG dataset** (40 subjects, 14 channels). Classifies 4-second windows as rest or stress, using band-pass filtering and per-subject normalisation.
+
+`paper replication` · `biosignals`
+
+<sub>scikit-learn · XGBoost · PyTorch · SciPy</sub>
+
+</td>
+<td width="50%" valign="top">
+
+### 🎵 [Music Genre Classification](https://github.com/this-AR/Music_genre_class)
+An IEEE paper's **modified CNN on MFCC features**, implemented on GTZAN across 10 genres.
+
+`85.62% test accuracy` · `paper implementation`
+
+<sub>TensorFlow · Keras · Librosa</sub>
 
 </td>
 </tr>
 </table>
 
+## 🌍 Open-source contributions
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### ⚡ [AlphaGPU/leetgpu-challenges](https://github.com/AlphaGPU/leetgpu-challenges)
+<sub>⭐ 1.2k · GPU programming challenges</sub>
+
+- 🟣 [Make Top-p Sampling deterministic and reproducible](https://github.com/AlphaGPU/leetgpu-challenges/pull/374)
+- 🟣 [Fix JAX reference crash in Speculative Decoding Verification](https://github.com/AlphaGPU/leetgpu-challenges/pull/368)
+- 🟣 [Add challenge structure validator](https://github.com/AlphaGPU/leetgpu-challenges/pull/311)
+- 🟣 [Fix stale `run_challenge.py` flag in docs](https://github.com/AlphaGPU/leetgpu-challenges/pull/367)
+- 🟢 [Replace the degenerate OLS performance test](https://github.com/AlphaGPU/leetgpu-challenges/pull/377)
+- 🟢 [Fix Count Array Element perf test range](https://github.com/AlphaGPU/leetgpu-challenges/pull/378)
+
+</td>
+<td width="50%" valign="top">
+
+### 🎯 [sb-ai-lab/RePlay](https://github.com/sb-ai-lab/RePlay)
+<sub>⭐ 417 · end-to-end recommender systems framework</sub>
+
+- 🟢 [Preserve tensor feature `padding_value` during serialization](https://github.com/sb-ai-lab/RePlay/pull/92)
+
+### 📘 [The_small_coder](https://github.com/Venkatesh-Shukla/The_small_coder)
+<sub>Collaborative ML project</sub>
+
+- 🟣 [Add RAG implementation](https://github.com/Venkatesh-Shukla/The_small_coder/pull/5) + 2 report PRs
+
+</td>
+</tr>
+</table>
+
+<p align="center"><sub>🟣 merged · 🟢 open</sub></p>
+
 <details>
 <summary><b>More things I've built</b></summary>
 <br/>
 
-- 🧪 [**neetcode-gpt**](https://github.com/this-AR/neetcode-gpt): a GPT built from scratch
-- 📚 [**CiteRec**](https://github.com/this-AR/CiteRec): citation recommendation
-- 🤖 [**AI_RESEARCHAGENT**](https://github.com/this-AR/AI_RESEARCHAGENT): an LLM research agent
-- 🦾 [**EMG-to-Pose**](https://github.com/this-AR/EMG-to-Pose): estimating hand pose from EMG signals
-- 🧠 [**eeg_stress_detection**](https://github.com/this-AR/eeg_stress_detection): detecting stress from EEG
-- 🌳 [**Deepphenotree-CVPPA**](https://github.com/this-AR/Deepphenotree-CVPPA): plant phenotyping for CVPPA
-- ⚡ [**leetgpu-challenges**](https://github.com/this-AR/leetgpu-challenges): GPU kernel challenges
+- 🌳 [**Deepphenotree-CVPPA**](https://github.com/this-AR/Deepphenotree-CVPPA): plant phenotyping for the CVPPA workshop
+- ☕ [**neetcode-practice**](https://github.com/this-AR/neetcode-practice): my NeetCode problem solutions in Java
+- 📊 [**FIFA-Player-Analysis**](https://github.com/this-AR/FIFA-Player-Analysis) · [**Stock_analysis**](https://github.com/this-AR/Stock_analysis): data analysis notebooks
 
 </details>
 
@@ -134,5 +214,10 @@ Cross-language **math retrieval** (Hindi → English): translation followed by C
 <p align="center">
   <img src="assets/transformer.svg" width="100%" alt="Animated transformer encoder: a forward pass flows up through embedding, multi-head self-attention, layer norm and feed-forward blocks, beside a live attention heatmap over the tokens query, retrieve, rerank, ground, generate, distill, deploy"/>
 </p>
+
+<p align="center"><sub>
+The tokens in the heatmap are the stages of my own work: <b>query → retrieve → rerank → ground → generate</b> is the <a href="https://github.com/this-AR/QAMED">QAMed</a> RAG pipeline, and <b>distill → deploy</b> is how the UERC models got from 88M to 7.2M parameters for the edge.<br/>
+The attention it draws is the same mechanism I implemented from scratch in <a href="https://github.com/this-AR/neetcode-gpt">neetcode-gpt</a>.
+</sub></p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,50:6e40c9,100:0d1117&height=120&section=footer" width="100%" alt=""/>
