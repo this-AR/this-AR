@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="360" viewBox="0 0 820 360">
+  <style>
+    .bg { fill: #0d1117; stroke: #30363d; }
+    .bar { fill: #161b22; }
+    text { font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; font-size: 15px; }
+    .p { fill: #7ee787; } .c { fill: #e6edf3; } .k { fill: #79c0ff; } .v { fill: #ffa657; } .m { fill: #8b949e; } .h { fill: #d2a8ff; }
+    .l { opacity: 0; animation: show 0.01s forwards; }
+    .cur { fill: #7ee787; animation: blink 1s step-end infinite; }
+    @keyframes show { to { opacity: 1; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .l { animation: none; opacity: 1; } .cur { animation: none; } }
+  </style>
+  <rect class="bg" x="1" y="1" width="818" height="358" rx="12"/>
+  <path class="bar" d="M1 13a12 12 0 0 1 12-12h794a12 12 0 0 1 12 12v23H1z"/>
+  <circle cx="22" cy="18" r="6" fill="#ff5f56"/><circle cx="42" cy="18" r="6" fill="#ffbd2e"/><circle cx="62" cy="18" r="6" fill="#27c93f"/>
+  <text x="410" y="23" text-anchor="middle" class="m" style="font-size:13px">aditya@nitkkr: ~</text>
+
+  <text x="24" y="66" class="l" style="animation-delay:0.3s"><tspan class="p">➜ </tspan><tspan class="k">~ </tspan><tspan class="c">python -c "import aditya; aditya.about()"</tspan></text>
+  <text x="24" y="98" class="l" style="animation-delay:1.1s"><tspan class="h">name      </tspan><tspan class="v">"Aditya Rai"</tspan></text>
+  <text x="24" y="124" class="l" style="animation-delay:1.4s"><tspan class="h">studying  </tspan><tspan class="v">"B.Tech AI &amp; ML @ NIT Kurukshetra"</tspan><tspan class="m">  # CGPA 8.85</tspan></text>
+  <text x="24" y="150" class="l" style="animation-delay:1.7s"><tspan class="h">research  </tspan><tspan class="c">[</tspan><tspan class="v">"Information Retrieval"</tspan><tspan class="c">, </tspan><tspan class="v">"RAG"</tspan><tspan class="c">, </tspan><tspan class="v">"Edge-efficient DL"</tspan><tspan class="c">]</tspan></text>
+  <text x="24" y="176" class="l" style="animation-delay:2.0s"><tspan class="h">papers    </tspan><tspan class="c">[</tspan><tspan class="v">"FIRE 2025"</tspan><tspan class="c">, </tspan><tspan class="v">"IJCB 2026"</tspan><tspan class="c">, </tspan><tspan class="v">"ACM RecSys 2026 (Music-CRS)"</tspan><tspan class="c">]</tspan></text>
+  <text x="24" y="202" class="l" style="animation-delay:2.3s"><tspan class="h">wins      </tspan><tspan class="v">"🥈 IEEE UERC 2026 — 2nd place, both tracks"</tspan></text>
+  <text x="24" y="228" class="l" style="animation-delay:2.6s"><tspan class="h">now       </tspan><tspan class="v">"Amazon ML Summer School 2026"</tspan></text>
+
+  <text x="24" y="270" class="l" style="animation-delay:3.2s"><tspan class="p">➜ </tspan><tspan class="k">~ </tspan><tspan class="c">model.compress(</tspan><tspan class="v">"SwinV2-88M"</tspan><tspan class="c">)</tspan></text>
+  <text x="24" y="296" class="l" style="animation-delay:3.9s"><tspan class="m">  88M ━━━━━━━━━━ 21M ━━━━ 7.2M  </tspan><tspan class="p">✔ 91% smaller, still 96.8% AUC</tspan></text>
+
+  <g class="l" style="animation-delay:4.4s">
+    <text x="24" y="336"><tspan class="p">➜ </tspan><tspan class="k">~ </tspan></text>
+    <rect class="cur" x="60" y="323" width="9" height="17"/>
+  </g>
+</svg>
