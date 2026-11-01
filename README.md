@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:6e40c9,100:1f6feb&height=200&section=header&text=Aditya%20Rai&fontSize=60&fontColor=ffffff&fontAlignY=36&desc=AI%20%2F%20ML%20Researcher%20%E2%80%A2%20NIT%20Kurukshetra&descAlignY=58&descSize=18&animation=fadeIn" width="100%" alt="Aditya Rai — AI/ML Researcher, NIT Kurukshetra"/>
+<img src="assets/header.svg" width="100%" alt="Aditya Rai: AI/ML Researcher, B.Tech AI &amp; ML at NIT Kurukshetra. Information Retrieval, RAG &amp; LLMs, Edge AI, RecSys. 3 papers, 2nd place at IEEE UERC 2026, Amazon ML Summer School 2026, CGPA 8.85"/>
 
 <div align="center">
 
