@@ -1,9 +1,9 @@
-<img src="assets/header.svg" width="100%" alt="Anime night city: the name Aditya Rai glows as a pink neon sign above the line AI/ML Researcher · NIT Kurukshetra. A coder sits on a rooftop with a glowing laptop and a cat under the moon, and a floating status window lists Class ML Researcher, Title Model Compressor, and skills in Information Retrieval, RAG and LLMs, Knowledge Distillation and Recommender Systems"/>
+<img src="assets/header.svg" width="100%" alt="Header styled as an ML experiment dashboard for run aditya-rai/research: Aditya Rai, AI/ML Researcher at NIT Kurukshetra. Config lists focus IR, RAG, Edge and RecSys and 3 papers, beside live train-loss and validation-AUC charts and gauges for GPU utilisation, 7.2M parameters and 86% faithfulness"/>
 
 <div align="center">
 
 <a href="https://github.com/this-AR">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=FF5FB2&center=true&vCenter=true&width=640&lines=Teaching+machines+to+find+the+right+answer+%F0%9F%94%8E;Retrieval+%E2%80%A2+RAG+%E2%80%A2+LLMs+%E2%80%A2+Recommender+Systems;Shrinking+88M+models+to+7M+for+the+edge+%E2%9A%A1;3+papers+%E2%80%A2+FIRE+%E2%80%A2+IJCB+%E2%80%A2+ACM+RecSys;Always+building+something+cool+%F0%9F%9A%80" alt="Typing intro"/>
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=A371F7&center=true&vCenter=true&width=640&lines=Teaching+machines+to+find+the+right+answer+%F0%9F%94%8E;Retrieval+%E2%80%A2+RAG+%E2%80%A2+LLMs+%E2%80%A2+Recommender+Systems;Shrinking+88M+models+to+7M+for+the+edge+%E2%9A%A1;3+papers+%E2%80%A2+FIRE+%E2%80%A2+IJCB+%E2%80%A2+ACM+RecSys;Always+building+something+cool+%F0%9F%9A%80" alt="Typing intro"/>
 </a>
 
 <p>
@@ -208,7 +208,7 @@ An IEEE paper's **modified CNN on MFCC features**, implemented on GTZAN across 1
 ## ⚡ Under the hood
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=this-AR&theme=github-dark-blue&hide_border=true&background=0D1117&ring=FF5FB2&fire=4FE3FF&currStreakLabel=FF5FB2" alt="GitHub streak"/>
+  <img src="https://streak-stats.demolab.com/?user=this-AR&theme=github-dark-blue&hide_border=true&background=0D1117&ring=A371F7&fire=A371F7&currStreakLabel=A371F7" alt="GitHub streak"/>
 </p>
 
 <p align="center">
@@ -220,4 +220,4 @@ The tokens in the heatmap are the stages of my own work: <b>query → retrieve �
 The attention it draws is the same mechanism I implemented from scratch in <a href="https://github.com/this-AR/neetcode-gpt">neetcode-gpt</a>.
 </sub></p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4fe3ff,50:ff5fb2,100:1d0f3f&height=120&section=footer" width="100%" alt=""/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,50:6e40c9,100:0d1117&height=120&section=footer" width="100%" alt=""/>
