@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="448" viewBox="0 0 1000 448">
+  <style>
+    .serif { font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'CMU Serif', Georgia, 'Times New Roman', serif; fill: #1f2328; }
+    .mono { font-family: 'Fira Code', Consolas, 'Courier New', monospace; }
+    .fade { opacity: 0; animation: in 0.8s ease-out forwards; }
+    .mark { animation: mark 1.2s ease-out 2.2s forwards; }
+    @keyframes in { to { opacity: 1; } }
+    @keyframes mark { to { fill: #8250df; } }
+    @media (prefers-reduced-motion: reduce) { .fade { animation: none; opacity: 1; } .mark { animation: none; fill: #8250df; } }
+  </style>
+
+  <rect x="0.5" y="0.5" width="999" height="447" rx="6" fill="#fcfbf8" stroke="#d0d7de"/>
+
+  <!-- left-margin preprint stamp -->
+  <text transform="translate(52 410) rotate(-90)" class="mono" font-size="15" fill="#a0a7b0" letter-spacing="1">github.com/this-AR  [cs.IR]  2026</text>
+
+  <text x="530" y="58" text-anchor="middle" class="mono fade" font-size="12" fill="#8250df" letter-spacing="3">PREPRINT · PROFILE README</text>
+
+  <g class="fade" style="animation-delay:0.2s">
+    <text x="530" y="108" text-anchor="middle" class="serif" font-size="34" font-weight="700">Teaching Machines to Find Things:</text>
+    <text x="530" y="148" text-anchor="middle" class="serif" font-size="25">Retrieval, Grounded Generation and Compression for the Edge</text>
+  </g>
+
+  <g class="fade" style="animation-delay:0.6s">
+    <text x="530" y="196" text-anchor="middle" class="serif" font-size="19">Aditya Rai<tspan font-size="12" dy="-7">1</tspan></text>
+    <text x="530" y="220" text-anchor="middle" class="serif" font-size="14" font-style="italic" fill="#59636e"><tspan font-size="10" dy="-5">1</tspan><tspan dy="5">Department of Artificial Intelligence and Machine Learning, NIT Kurukshetra</tspan></text>
+  </g>
+
+  <g class="fade" style="animation-delay:1.1s">
+    <text x="530" y="264" text-anchor="middle" class="serif" font-size="15" font-weight="700">Abstract</text>
+    <text class="serif" font-size="15" fill="#2d333b">
+      <tspan x="170" y="292">I build systems that retrieve the right evidence and reason over it: multilingual information</tspan>
+      <tspan x="170" y="314">retrieval, retrieval-augmented generation and recommendation. This profile reports three papers</tspan>
+      <tspan x="170" y="336">(FIRE 2025, IJCB 2026, ACM RecSys 2026), 2nd place in both tracks of IEEE UERC 2026, and a distillation</tspan>
+      <tspan x="170" y="358">pipeline that compresses </tspan><tspan class="mark">an 88M-parameter model to 7.2M</tspan><tspan> so it runs on a Raspberry Pi 4.</tspan>
+    </text>
+  </g>
+
+  <g class="fade" style="animation-delay:1.6s">
+    <line x1="170" y1="384" x2="890" y2="384" stroke="#d0d7de"/>
+    <text x="170" y="412" class="serif" font-size="14" fill="#59636e"><tspan font-weight="700" fill="#1f2328">Keywords:</tspan> information retrieval · RAG · LLMs · knowledge distillation · pruning · recommender systems</text>
+  </g>
+</svg>

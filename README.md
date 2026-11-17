@@ -1,223 +1,105 @@
-<img src="assets/header-violet.svg" width="100%" alt="Aditya Rai — AI/ML Researcher, NIT Kurukshetra. Focus: 01 retrieval, 02 RAG and LLMs, 03 edge AI, 04 recsys. 3 papers, 2nd place at IEEE UERC 2026, Amazon ML Summer School 2026"/>
+<img src="assets/paper.svg" width="100%" alt="Teaching Machines to Find Things: Retrieval, Grounded Generation and Compression for the Edge. Aditya Rai, Department of AI and ML, NIT Kurukshetra. Abstract: I build systems that retrieve the right evidence and reason over it. Three papers (FIRE 2025, IJCB 2026, ACM RecSys 2026), 2nd place in both tracks of IEEE UERC 2026, and an 88M to 7.2M parameter distillation pipeline for a Raspberry Pi 4."/>
 
-<div align="center">
+<p align="center"><sub>
+<b>Correspondence:</b> <a href="mailto:adityarai735@gmail.com">adityarai735@gmail.com</a> &nbsp;·&nbsp;
+<a href="https://aditya-rai-portfolio-616843600343.asia-southeast1.run.app/">portfolio</a> &nbsp;·&nbsp;
+<a href="https://linkedin.com/in/aditya-rai">linkedin</a>
+</sub></p>
 
-<a href="https://github.com/this-AR">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=A371F7&center=true&vCenter=true&width=640&lines=Teaching+machines+to+find+the+right+answer+%F0%9F%94%8E;Retrieval+%E2%80%A2+RAG+%E2%80%A2+LLMs+%E2%80%A2+Recommender+Systems;Shrinking+88M+models+to+7M+for+the+edge+%E2%9A%A1;3+papers+%E2%80%A2+FIRE+%E2%80%A2+IJCB+%E2%80%A2+ACM+RecSys;Always+building+something+cool+%F0%9F%9A%80" alt="Typing intro"/>
-</a>
+---
 
-<p>
-  <a href="https://aditya-rai-portfolio-616843600343.asia-southeast1.run.app/"><img src="https://img.shields.io/badge/Portfolio-6e40c9?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://linkedin.com/in/aditya-rai"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:adityarai735@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <img src="https://komarev.com/ghpvc/?username=this-AR&style=for-the-badge&color=1f6feb&label=Profile+views" alt="Profile views"/>
-</p>
+### 1 &nbsp; Introduction
 
-</div>
+Most useful AI comes down to **finding the right thing**: the right passage for a question, the right track for a conversation, the right identity for a face or an ear. I am a B.Tech student in Artificial Intelligence & Machine Learning at NIT Kurukshetra (2023–2027, CGPA 8.85). I work on retrieval and RAG, and on making the models behind them small enough to run on edge devices.
+
+The contributions of this profile are as follows:
+
+1. **Cross-language math retrieval** (Hindi → English) with translation and ColBERT late interaction, placing in the top 6 at FIRE 2025 [P3].
+2. **Cascaded distillation and structured pruning** that shrink an ear-recognition model by 91% while placing 2nd in both tracks of IEEE UERC 2026 [P2].
+3. **Conversational music recommendation** that fuses CF, audio, visual and lexical retrieval with weighted RRF, at ACM RecSys 2026 [P1].
+4. A citation-aware **medical RAG system** with hallucination guardrails (§4), plus open-source fixes to GPU and recommender-system libraries (§5).
+
+I was also selected for **Amazon ML Summer School 2026**. Ask me about hybrid retrieval, reranking, knowledge distillation or model pruning.
+
+### 2 &nbsp; Publications
+
+**[P1]** *Dialogue-Aware Conversational Music Recommendation via Multi-Modal Retrieval and Weighted RRF.* ACM RecSys 2026, Music-CRS.<br/>
+**[P2]** *System Description: Cascaded Knowledge Distillation and Structured Pruning for Edge Ear Biometrics.* IJCB 2026, in press.<br/>
+**[P3]** *Enhancing Multilingual Mathematical Document Retrieval: A Hindi-to-English Translation and ColBERT-based Approach.* FIRE 2025, IIT (BHU) Varanasi.
+
+### 3 &nbsp; Experiments
+
+<p align="center"><sub><b>Table 1.</b> Main results. Each row is a shared task, so the ranking is against other teams.</sub></p>
+
+| Task | Method | Result | |
+|---|---|---|:-:|
+| **UERC 2026**<br/><sub>edge ear biometrics</sub> | Multi-stage KD: SwinV2 88M → TinyViT 21M → **7.2M**, then Taylor pruning | **2nd, both tracks** · AUC 96.8% · 91% smaller | [P2] |
+| **FIRE 2025 CLMIR**<br/><sub>Hindi → English math IR</sub> | Query translation + ColBERT late-interaction retrieval | **Top 6** · MAP 0.148 · nDCG 0.220 | [P3] |
+| **RecSys 2026 Music-CRS**<br/><sub>conversational recsys</sub> | Multi-seed FAISS over CF / audio / visual embeddings + BM25, fused by weighted RRF, with an LLM exact-match extractor | **9th** academic · 25th overall · 47K-track catalog | [P1] |
+| **Amazon ML Challenge 2026** | | **AIR 312** | |
+
+### 4 &nbsp; Systems
+
+<p align="center"><sub><b>Table 2.</b> Selected implementations. All code is public.</sub></p>
+
+| System | Description | Notes | Stack |
+|---|---|---|---|
+| [**QAMed**](https://github.com/this-AR/QAMED) | Citation-aware medical RAG over MBBS textbooks: hybrid BM25 + dense retrieval, CrossEncoder reranking, multi-hop routing, two-tier hallucination guardrails | 86%+ faithfulness · ~1s generation · Redis semantic cache | LLaMA-3.1, LangChain, Qdrant, PubMedBERT, Langfuse |
+| [**sargam-music-crs**](https://github.com/this-AR/sargam-music-crs) | Code for [P1] | 9th academic track | FAISS, BM25, Gemini |
+| [**neetcode-gpt**](https://github.com/this-AR/neetcode-gpt) | A GPT from scratch: gradient descent → self-attention → multi-head attention → transformer blocks → language model | no frameworks | Python, NumPy |
+| [**AI_RESEARCHAGENT**](https://github.com/this-AR/AI_RESEARCHAGENT) | Four-agent pipeline: lead discovery → email generation → workflow review → quality validation | being rebuilt as an evidence-grounded app | CrewAI |
+| [**eeg_stress_detection**](https://github.com/this-AR/eeg_stress_detection) | Replication and extension of a stress-detection paper on SAM40 EEG (40 subjects, 14 channels, 4s windows) | paper replication | scikit-learn, XGBoost, PyTorch |
+| [**Music_genre_class**](https://github.com/this-AR/Music_genre_class) | An IEEE paper's modified CNN on MFCC features, GTZAN, 10 genres | 85.62% test accuracy | TensorFlow, Librosa |
 
 <p align="center">
-  <img src="assets/terminal.svg" width="100%" alt="Terminal: Aditya Rai — B.Tech AI &amp; ML at NIT Kurukshetra; researches information retrieval, RAG and edge-efficient deep learning; papers at FIRE 2025, IJCB 2026 and ACM RecSys 2026; 2nd place at IEEE UERC 2026"/>
+  <img src="assets/transformer.svg" width="82%" alt="Animated transformer encoder: a forward pass flows up through embedding, multi-head self-attention, layer norm and feed-forward blocks, beside a live attention heatmap over the tokens query, retrieve, rerank, ground, generate, distill, deploy"/>
 </p>
+<p align="center"><sub>
+<b>Figure 1.</b> A transformer encoder attending over the stages of my own work. <i>query → retrieve → rerank → ground → generate</i> is the <a href="https://github.com/this-AR/QAMED">QAMed</a> pipeline; <i>distill → deploy</i> is how the UERC model went from 88M to 7.2M parameters [P2]. The attention mechanism is the one built from scratch in <a href="https://github.com/this-AR/neetcode-gpt">neetcode-gpt</a>.
+</sub></p>
 
-## 🧠 About me
+### 5 &nbsp; Related work
 
-I'm a B.Tech student in **Artificial Intelligence & Machine Learning at NIT Kurukshetra** (CGPA 8.85, 2023–2027). My research is about **finding things**: multilingual information retrieval, retrieval-augmented generation, and recommendation. I also work on **making deep models small enough to run on edge devices**.
+Upstream contributions. ● merged &nbsp; ○ open
 
-- 🔬 Research intern at NIT Kurukshetra, building cross-language math retrieval (Top 6 at FIRE 2025)
-- 🥈 2nd place in **both tracks** of the IEEE Unconstrained Ear Recognition Challenge 2026
-- ☀️ Selected for **Amazon ML Summer School 2026**
-- 💬 Ask me about RAG pipelines, hybrid retrieval, knowledge distillation, or model pruning
+- **[AlphaGPU/leetgpu-challenges](https://github.com/AlphaGPU/leetgpu-challenges)** <sub>★ 1.2k · GPU programming challenges</sub>
+  - ● [Make Top-p Sampling deterministic and reproducible](https://github.com/AlphaGPU/leetgpu-challenges/pull/374)
+  - ● [Fix JAX reference crash in Speculative Decoding Verification](https://github.com/AlphaGPU/leetgpu-challenges/pull/368)
+  - ● [Add challenge structure validator](https://github.com/AlphaGPU/leetgpu-challenges/pull/311)
+  - ● [Fix stale `run_challenge.py` flag in docs](https://github.com/AlphaGPU/leetgpu-challenges/pull/367)
+  - ○ [Replace the degenerate OLS performance test](https://github.com/AlphaGPU/leetgpu-challenges/pull/377)
+  - ○ [Fix Count Array Element perf test range](https://github.com/AlphaGPU/leetgpu-challenges/pull/378)
+- **[sb-ai-lab/RePlay](https://github.com/sb-ai-lab/RePlay)** <sub>★ 417 · end-to-end recommender systems framework</sub>
+  - ○ [Preserve tensor feature `padding_value` during serialization](https://github.com/sb-ai-lab/RePlay/pull/92)
+- **[Venkatesh-Shukla/The_small_coder](https://github.com/Venkatesh-Shukla/The_small_coder)** <sub>collaborative ML project</sub>
+  - ● [Add RAG implementation](https://github.com/Venkatesh-Shukla/The_small_coder/pull/5), plus 2 report PRs
 
-## 📄 Publications
+### 6 &nbsp; Conclusion
 
-| | Paper | Venue |
-|:-:|---|---|
-| 🎵 | **Dialogue-Aware Conversational Music Recommendation via Multi-Modal Retrieval and Weighted RRF** | ACM RecSys 2026 · Music-CRS |
-| 👂 | **System Description: Cascaded Knowledge Distillation and Structured Pruning for Edge Ear Biometrics** | IJCB 2026 · *in press* |
-| ➗ | **Enhancing Multilingual Mathematical Document Retrieval: A Hindi-to-English Translation and ColBERT-based Approach** | FIRE 2025 · IIT (BHU) Varanasi |
+Retrieval decides what a model gets to see, and compression decides where it gets to run. I want to keep working on both. If you are working on IR, RAG or efficient models, [write to me](mailto:adityarai735@gmail.com).
 
-## 🔬 Research highlights
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 👂 UERC 2026: Edge Ear Biometrics
-Multi-stage **knowledge distillation + Taylor pruning**: SwinV2 88M → TinyViT 21M → **7.2M** parameters, small enough for a Raspberry Pi 4.
-
-`🥈 2nd place, both tracks` · `91% smaller` · `AUC 96.8%`
-
-<sub>PyTorch · TinyViT · SwinV2 · AdaFace · torch-pruning · 📄 IJCB 2026</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### ➗ CLMIR: FIRE 2025
-Cross-language **math retrieval** (Hindi → English): translation followed by ColBERT late-interaction retrieval.
-
-`Top 6 teams` · `MAP 0.148` · `nDCG 0.220`
-
-<sub>ColBERT · NLP · Multilingual IR · 📄 FIRE 2025</sub>
-
-</td>
-</tr>
-</table>
-
-## 🚀 Featured repos
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🩺 [QAMed](https://github.com/this-AR/QAMED)
-A citation-aware **medical RAG** system built on MBBS textbooks.
-Hybrid BM25 + dense retrieval, CrossEncoder reranking, multi-hop routing, and two-tier hallucination guardrails.
-
-`86%+ faithfulness` · `~1s generation` · `Redis + semantic cache`
-
-<sub>LLaMA-3.1 · LangChain · Qdrant · PubMedBERT · Langfuse</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### 🎶 [Team Sargam: Music-CRS](https://github.com/this-AR/sargam-music-crs)
-A conversational music recommender for the ACM RecSys 2026 challenge. Multi-seed FAISS search over CF, audio and visual embeddings, plus BM25, merged with weighted RRF and an LLM exact-match extractor.
-
-`9th academic track` · `47K-track catalog` · `📄 RecSys 2026`
-
-<sub>FAISS · BM25 · Gemini · RRF</sub>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🧪 [neetcode-gpt](https://github.com/this-AR/neetcode-gpt)
-A **GPT built from scratch**, starting from gradient descent and working up through self-attention, multi-head attention and transformer blocks to a working language model.
-
-`attention from scratch` · `full GPT`
-
-<sub>Python · NumPy</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### 🤖 [AI Research Agent](https://github.com/this-AR/AI_RESEARCHAGENT)
-A **four-agent CrewAI pipeline**: lead discovery → email generation → workflow review → quality validation. It is being upgraded into an evidence-grounded app.
-
-`multi-agent` · `LLM orchestration`
-
-<sub>CrewAI · Python · LLMs</sub>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🧠 [EEG Stress Detection](https://github.com/this-AR/eeg_stress_detection)
-Replicates and extends a stress-detection paper on the **SAM40 EEG dataset** (40 subjects, 14 channels). Classifies 4-second windows as rest or stress, using band-pass filtering and per-subject normalisation.
-
-`paper replication` · `biosignals`
-
-<sub>scikit-learn · XGBoost · PyTorch · SciPy</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### 🎵 [Music Genre Classification](https://github.com/this-AR/Music_genre_class)
-An IEEE paper's **modified CNN on MFCC features**, implemented on GTZAN across 10 genres.
-
-`85.62% test accuracy` · `paper implementation`
-
-<sub>TensorFlow · Keras · Librosa</sub>
-
-</td>
-</tr>
-</table>
-
-## 🌍 Open-source contributions
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### ⚡ [AlphaGPU/leetgpu-challenges](https://github.com/AlphaGPU/leetgpu-challenges)
-<sub>⭐ 1.2k · GPU programming challenges</sub>
-
-- 🟣 [Make Top-p Sampling deterministic and reproducible](https://github.com/AlphaGPU/leetgpu-challenges/pull/374)
-- 🟣 [Fix JAX reference crash in Speculative Decoding Verification](https://github.com/AlphaGPU/leetgpu-challenges/pull/368)
-- 🟣 [Add challenge structure validator](https://github.com/AlphaGPU/leetgpu-challenges/pull/311)
-- 🟣 [Fix stale `run_challenge.py` flag in docs](https://github.com/AlphaGPU/leetgpu-challenges/pull/367)
-- 🟢 [Replace the degenerate OLS performance test](https://github.com/AlphaGPU/leetgpu-challenges/pull/377)
-- 🟢 [Fix Count Array Element perf test range](https://github.com/AlphaGPU/leetgpu-challenges/pull/378)
-
-</td>
-<td width="50%" valign="top">
-
-### 🎯 [sb-ai-lab/RePlay](https://github.com/sb-ai-lab/RePlay)
-<sub>⭐ 417 · end-to-end recommender systems framework</sub>
-
-- 🟢 [Preserve tensor feature `padding_value` during serialization](https://github.com/sb-ai-lab/RePlay/pull/92)
-
-### 📘 [The_small_coder](https://github.com/Venkatesh-Shukla/The_small_coder)
-<sub>Collaborative ML project</sub>
-
-- 🟣 [Add RAG implementation](https://github.com/Venkatesh-Shukla/The_small_coder/pull/5) + 2 report PRs
-
-</td>
-</tr>
-</table>
-
-<p align="center"><sub>🟣 merged · 🟢 open</sub></p>
+---
 
 <details>
-<summary><b>More things I've built</b></summary>
+<summary><b>Appendix A &nbsp; Toolbox</b></summary>
 <br/>
 
-- 🌳 [**Deepphenotree-CVPPA**](https://github.com/this-AR/Deepphenotree-CVPPA): plant phenotyping for the CVPPA workshop
-- ☕ [**neetcode-practice**](https://github.com/this-AR/neetcode-practice): my NeetCode problem solutions in Java
-- 📊 [**FIFA-Player-Analysis**](https://github.com/this-AR/FIFA-Player-Analysis) · [**Stock_analysis**](https://github.com/this-AR/Stock_analysis): data analysis notebooks
+| | |
+|---|---|
+| Languages | Python, Java |
+| Deep learning | PyTorch, TensorFlow / Keras, Hugging Face, scikit-learn, XGBoost |
+| Retrieval & LLMs | LangChain, CrewAI, Qdrant, FAISS, ColBERT, BM25, Langfuse |
+| Serving & data | FastAPI, Streamlit, Redis, SQLite, Pandas, NumPy |
+| Tools | Git, Linux, VS Code |
 
 </details>
 
-## 🏆 Achievements
+<details>
+<summary><b>Appendix B &nbsp; Other work</b></summary>
+<br/>
 
-- 🥈 **2nd place, both tracks**: Unconstrained Ear Recognition Challenge (UERC 2026), IEEE Biometrics Council
-- 🎵 **9th place (Academic Track), 25th overall**: ACM RecSys 2026 Music-CRS Challenge
-- 🏅 **Top 6**: CLMIR track, FIRE 2025
-- ☀️ **Selected**: Amazon ML Summer School 2026
-- 📈 **AIR 312**: Amazon ML Challenge 2026
+- [**Deepphenotree-CVPPA**](https://github.com/this-AR/Deepphenotree-CVPPA): plant phenotyping for the CVPPA workshop
+- [**neetcode-practice**](https://github.com/this-AR/neetcode-practice): NeetCode solutions in Java
+- [**FIFA-Player-Analysis**](https://github.com/this-AR/FIFA-Player-Analysis) · [**Stock_analysis**](https://github.com/this-AR/Stock_analysis): data analysis notebooks
 
-## 🛠️ Toolbox
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=py,java,pytorch,tensorflow,sklearn,fastapi,redis,sqlite,git,github,linux,vscode&theme=dark&perline=12" alt="Python, Java, PyTorch, TensorFlow, scikit-learn, FastAPI, Redis, SQLite, Git, GitHub, Linux, VS Code"/>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"/>
-  <img src="https://img.shields.io/badge/Qdrant-DC244C?style=flat-square&logo=qdrant&logoColor=white" alt="Qdrant"/>
-  <img src="https://img.shields.io/badge/FAISS-0467DF?style=flat-square&logo=meta&logoColor=white" alt="FAISS"/>
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face"/>
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas"/>
-  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy"/>
-  <img src="https://img.shields.io/badge/Langfuse-000000?style=flat-square&logoColor=white" alt="Langfuse"/>
-</p>
-
-## ⚡ Under the hood
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=this-AR&theme=github-dark-blue&hide_border=true&background=0D1117&ring=A371F7&fire=A371F7&currStreakLabel=A371F7" alt="GitHub streak"/>
-</p>
-
-<p align="center">
-  <img src="assets/transformer.svg" width="100%" alt="Animated transformer encoder: a forward pass flows up through embedding, multi-head self-attention, layer norm and feed-forward blocks, beside a live attention heatmap over the tokens query, retrieve, rerank, ground, generate, distill, deploy"/>
-</p>
-
-<p align="center"><sub>
-The tokens in the heatmap are the stages of my own work: <b>query → retrieve → rerank → ground → generate</b> is the <a href="https://github.com/this-AR/QAMED">QAMed</a> RAG pipeline, and <b>distill → deploy</b> is how the UERC models got from 88M to 7.2M parameters for the edge.<br/>
-The attention it draws is the same mechanism I implemented from scratch in <a href="https://github.com/this-AR/neetcode-gpt">neetcode-gpt</a>.
-</sub></p>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,50:6e40c9,100:0d1117&height=120&section=footer" width="100%" alt=""/>
+</details>
